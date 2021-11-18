@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Listchamp } from '../../model/listchamp';
+import { ListchampService } from '../../service/listchamp.service';
 
 @Component({
   selector: 'app-listchamp-page',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListchampPageComponent implements OnInit {
 
-  constructor() { }
+  listchamps: Array<Listchamp> = [];
 
+  constructor(private listchampService: ListchampService) { }
+
+  //Init de la page
   ngOnInit(): void {
+    this.listchampService.getListChamp();
+    this.getListchamps();
+  }
+
+  //Récupérer la liste des champions
+  getListchamps = (): void => {
+    this.listchampService.listchampstream.subscribe( data => {
+      this.listchamps = data
+    },
+      err => console.error(err)
+    )
   }
 
 }

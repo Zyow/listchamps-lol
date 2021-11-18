@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Listchamp } from '../../model/listchamp';
 
 @Component({
   selector: 'app-display-listchamp',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-listchamp.component.css']
 })
 export class DisplayListchampComponent implements OnInit {
+
+  @Input() data: Listchamp[] = [];
 
   constructor() { }
 

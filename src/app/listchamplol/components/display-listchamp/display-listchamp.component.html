@@ -1,1 +1,6 @@
-<p>display-listchamp works!</p>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let listchamp of data; let i = index">
+      <span> name : {{ listchamp.name}}</span>
+      <span> active : {{ listchamp.active}}</span>
+  </li>
+</ul>
