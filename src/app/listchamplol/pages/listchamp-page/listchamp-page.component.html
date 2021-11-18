@@ -2,6 +2,6 @@
 
   <app-add-champ (newChamp)="newChampPrt($event)"></app-add-champ>
 
-  <app-display-listchamp [data]="listchamps"></app-display-listchamp>
+  <app-display-listchamp [data]="listchamps" (deleteChamp)="delChampPrt($event)"></app-display-listchamp>
 
 </div>

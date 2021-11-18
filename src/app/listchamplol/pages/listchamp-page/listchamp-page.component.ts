@@ -40,4 +40,14 @@ export class ListchampPageComponent implements OnInit {
     )
   }
 
+
+  //Supprimer un champion
+  delChampPrt = (data:number): void => {
+    this.listchampService.deleteChamp(data).subscribe(data =>{
+      this.listchampService.getListChamp()
+    },
+      err => console.error(err)
+    )
+  }
+
 }

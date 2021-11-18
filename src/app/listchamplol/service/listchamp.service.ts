@@ -24,4 +24,9 @@ export class ListchampService {
   addChamp = (data: Listchamp): Observable<Listchamp> => {
     return this.http.post<Listchamp>(environment.URL, data)
   }
+
+  deleteChamp = (id:number): Observable<Listchamp[]> =>{
+    console.log("id = " + id);
+    return this.http.delete<Listchamp[]>(`${environment.URL}/${id}`)
+  }
 }

@@ -1,45 +1,10 @@
 {
   "champions": [
     {
-      "title": "the Monkey King",
-      "id": 62,
-      "key": "MonkeyKing",
-      "name": "Wukong",
-      "active": true
-    },
-    {
-      "title": "Grandmaster at Arms",
-      "id": 24,
-      "key": "Jax",
-      "name": "Jax",
-      "active": true
-    },
-    {
       "title": "the Harbinger of Doom",
       "id": 9,
       "key": "Fiddlesticks",
       "name": "Fiddlesticks",
-      "active": true
-    },
-    {
-      "title": "the Demon Jester",
-      "id": 35,
-      "key": "Shaco",
-      "name": "Shaco",
-      "active": true
-    },
-    {
-      "title": "the Uncaged Wrath of Zaun",
-      "id": 19,
-      "key": "Warwick",
-      "name": "Warwick",
-      "active": true
-    },
-    {
-      "title": "the Rebel",
-      "id": 498,
-      "key": "Xayah",
-      "name": "Xayah",
       "active": true
     },
     {
@@ -365,13 +330,6 @@
       "active": true
     },
     {
-      "title": "the Berserker",
-      "id": 2,
-      "key": "Olaf",
-      "name": "Olaf",
-      "active": true
-    },
-    {
       "title": "the Hexplosives Expert",
       "id": 115,
       "key": "Ziggs",
@@ -397,13 +355,6 @@
       "id": 43,
       "key": "Karma",
       "name": "Karma",
-      "active": true
-    },
-    {
-      "title": "the Dark Child",
-      "id": 1,
-      "key": "Annie",
-      "name": "Annie",
       "active": true
     },
     {
@@ -621,13 +572,6 @@
       "id": 32,
       "key": "Amumu",
       "name": "Amumu",
-      "active": false
-    },
-    {
-      "title": "the Colossus",
-      "id": 3,
-      "key": "Galio",
-      "name": "Galio",
       "active": false
     },
     {
@@ -965,11 +909,6 @@
       "key": "Ezreal",
       "name": "Ezreal",
       "active": true
-    },
-    {
-      "name": "yrdy",
-      "active": true,
-      "id": 517
     }
   ]
 }

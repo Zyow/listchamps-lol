@@ -3,11 +3,15 @@
     <ng-template [ngIf]="listchamp.active" [ngIfElse]="inactiveChamp">
       <span> name : {{ listchamp.name}}</span>
       <span> active : {{ listchamp.active}}</span>
+      {{ listchamp.id }}
+      <button (click)="deletechld(listchamp.id)"> X </button>
     </ng-template>
 
     <ng-template #inactiveChamp>
       <span class="text-muted"> name : {{ listchamp.name}}</span>
       <span class="text-muted"> active : {{ listchamp.active}}</span>
+      {{ listchamp.id }}
+      <button (click)="deletechld(listchamp.id)"> X </button>
     </ng-template>
   </li>
 </ul>

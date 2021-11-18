@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Listchamp } from '../../model/listchamp';
 
 @Component({
@@ -9,10 +9,15 @@ import { Listchamp } from '../../model/listchamp';
 export class DisplayListchampComponent implements OnInit {
 
   @Input() data: Listchamp[] = [];
+  @Output() deleteChamp:EventEmitter<number> = new EventEmitter<number>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  deletechld = (data:any) => {
+    let convertData = Number(data);
+    this.deleteChamp.emit(convertData);
+  }
 }
