@@ -1,17 +1,19 @@
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let listchamp of data; let i = index">
     <ng-template [ngIf]="listchamp.active" [ngIfElse]="inactiveChamp">
+      <input type="checkbox" [checked]="listchamp.active" (click)="changeStateChamp(listchamp)">
       <span> name : {{ listchamp.name}}</span>
       <span> active : {{ listchamp.active}}</span>
       {{ listchamp.id }}
-      <button (click)="deletechld(listchamp.id)"> X </button>
+      <button class="btn btn-danger" (click)="deletechld(listchamp.id)"> X </button>
     </ng-template>
 
     <ng-template #inactiveChamp>
+      <input type="checkbox" [checked]="listchamp.active" (click)="changeStateChamp(listchamp)">
       <span class="text-muted"> name : {{ listchamp.name}}</span>
       <span class="text-muted"> active : {{ listchamp.active}}</span>
       {{ listchamp.id }}
-      <button (click)="deletechld(listchamp.id)"> X </button>
+      <button class="btn btn-danger" (click)="deletechld(listchamp.id)"> X </button>
     </ng-template>
   </li>
 </ul>

@@ -1,7 +1,9 @@
 <div class="container">
 
+  <div class="text-center m-4"><img height="120px" src="/assets/img/lol-league-of-Legends-logo.png" alt="image"></div>
+
   <app-add-champ (newChamp)="newChampPrt($event)"></app-add-champ>
 
-  <app-display-listchamp [data]="listchamps" (deleteChamp)="delChampPrt($event)"></app-display-listchamp>
+  <app-display-listchamp [data]="listchamps" (deleteChamp)="delChampPrt($event)" (stateChamp)="stateChampPrt($event)"></app-display-listchamp>
 
 </div>

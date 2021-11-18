@@ -10,6 +10,7 @@ export class DisplayListchampComponent implements OnInit {
 
   @Input() data: Listchamp[] = [];
   @Output() deleteChamp:EventEmitter<number> = new EventEmitter<number>();
+  @Output() stateChamp:EventEmitter<Listchamp> = new EventEmitter<Listchamp>();
 
   constructor() { }
 
@@ -19,5 +20,10 @@ export class DisplayListchampComponent implements OnInit {
   deletechld = (data:any) => {
     let convertData = Number(data);
     this.deleteChamp.emit(convertData);
+  }
+
+  changeStateChamp = (data:Listchamp) => {
+    data.active == false ? data.active = true : data.active = false
+    this.stateChamp.emit(data);
   }
 }

@@ -50,4 +50,13 @@ export class ListchampPageComponent implements OnInit {
     )
   }
 
+  stateChampPrt = (data:Listchamp) => {
+    this.listchampService.changeState(data).subscribe(
+      data => {
+        this.listchampService.getListChamp()
+      },
+        err => console.error(err)
+    )
+  }
+
 }

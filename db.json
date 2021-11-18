@@ -1,38 +1,10 @@
 {
   "champions": [
     {
-      "title": "the Harbinger of Doom",
-      "id": 9,
-      "key": "Fiddlesticks",
-      "name": "Fiddlesticks",
-      "active": true
-    },
-    {
       "title": "the Bestial Huntress",
       "id": 76,
       "key": "Nidalee",
       "name": "Nidalee",
-      "active": true
-    },
-    {
-      "title": "Rise of the Thorns",
-      "id": 143,
-      "key": "Zyra",
-      "name": "Zyra",
-      "active": true
-    },
-    {
-      "title": "the Cantankerous Cavalier",
-      "id": 240,
-      "key": "Kled",
-      "name": "Kled",
-      "active": true
-    },
-    {
-      "title": "the Burning Vengeance",
-      "id": 63,
-      "key": "Brand",
-      "name": "Brand",
       "active": true
     },
     {
