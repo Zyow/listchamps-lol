@@ -1,19 +1,49 @@
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let listchamp of data; let i = index">
-    <ng-template [ngIf]="listchamp.active" [ngIfElse]="inactiveChamp">
-      <input type="checkbox" [checked]="listchamp.active" (click)="changeStateChamp(listchamp)">
-      <span> name : {{ listchamp.name}}</span>
-      <span> active : {{ listchamp.active}}</span>
-      {{ listchamp.id }}
-      <button class="btn btn-danger" (click)="deletechld(listchamp.id)"> X </button>
-    </ng-template>
+<div class="container py-2">
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-sm-4 col-md-3 py-3" *ngFor="let listchamp of data; let i = index">
+      <ng-template  [ngIf]="listchamp.active" [ngIfElse]="inactiveChamp">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ listchamp.name}}</h5>
+            <p class="card-text">
+              <ng-template [ngIf]="listchamp.title" [ngIfElse]="dhTitle">
+                {{ listchamp.title}}
+              </ng-template>
+              <ng-template #dhTitle>
+                Ce champion n'a pas encore de titre
+              </ng-template>
+            </p>
+            <button type="button" class="btn btn-info mr-1" (click)="changeStateChamp(listchamp)">
+              <i class="bi bi-eye-slash"></i>
+            </button>
+            <button type="button" class="btn btn-danger" (click)="deletechld(listchamp.id)">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+      </ng-template>
 
-    <ng-template #inactiveChamp>
-      <input type="checkbox" [checked]="listchamp.active" (click)="changeStateChamp(listchamp)">
-      <span class="text-muted"> name : {{ listchamp.name}}</span>
-      <span class="text-muted"> active : {{ listchamp.active}}</span>
-      {{ listchamp.id }}
-      <button class="btn btn-danger" (click)="deletechld(listchamp.id)"> X </button>
-    </ng-template>
-  </li>
-</ul>
+      <ng-template #inactiveChamp>
+        <div class="card text-white bg-dark">
+          <div class="card-body">
+            <h5 class="card-title">{{ listchamp.name}}</h5>
+            <p class="card-text">
+              <ng-template [ngIf]="listchamp.title" [ngIfElse]="dhTitle">
+                {{ listchamp.title}}
+              </ng-template>
+              <ng-template #dhTitle>
+                Ce champion n'a pas encore de titre
+              </ng-template>
+            </p>
+            <button type="button" class="btn btn-secondary mr-1" (click)="changeStateChamp(listchamp)">
+              <i class="bi bi-eye"></i>
+            </button>
+            <button type="button" class="btn btn-warning" (click)="deletechld(listchamp.id)">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+      </ng-template>
+   </div>
+  </div>
+</div>

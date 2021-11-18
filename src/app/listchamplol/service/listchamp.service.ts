@@ -9,7 +9,7 @@ import { Listchamp } from '../model/listchamp';
 })
 export class ListchampService {
 
-  listchampstream = new BehaviorSubject<Listchamp[]>([{id:0, name: "N/A", active: false}]);
+  listchampstream = new BehaviorSubject<Listchamp[]>([{id:0, name: "N/A", active: false, title: "Non disponible"}]);
 
   constructor(private http:HttpClient ) { }
 

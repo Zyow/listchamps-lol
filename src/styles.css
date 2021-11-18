@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ),
+  url("/assets/img/bkg_lol.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}

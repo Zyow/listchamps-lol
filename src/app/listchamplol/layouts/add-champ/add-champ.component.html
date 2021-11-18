@@ -1,3 +1,8 @@
-<input type="text" #inputChamp>
 
-<button (click)="addChamp(inputChamp.value)"> Ajouter un champion </button>
+<div class="input-group input-group-lg">
+
+  <input class="form-control" type="text" #inputChamp placeholder="Nom du champion" aria-label="Nom du champion" aria-describedby="button-addChamp">
+  <div class="input-group-append">
+    <button class="btn btn-lg btn-warning" type="button" (click)="addChamp(inputChamp.value)" id="button-addChamp"> Ajouter le champion </button>
+  </div>
+</div>

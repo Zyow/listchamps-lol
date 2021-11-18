@@ -8,13 +8,6 @@
       "active": true
     },
     {
-      "title": "the Armordillo",
-      "id": 33,
-      "key": "Rammus",
-      "name": "Rammus",
-      "active": true
-    },
-    {
       "title": "the Kraken Priestess",
       "id": 420,
       "key": "Illaoi",
@@ -22,31 +15,17 @@
       "active": true
     },
     {
-      "title": "the Daring Bombardier",
-      "id": 42,
-      "key": "Corki",
-      "name": "Corki",
-      "active": true
-    },
-    {
       "title": "the Heart of the Freljord",
       "id": 201,
       "key": "Braum",
       "name": "Braum",
-      "active": true
+      "active": false
     },
     {
       "title": "the Hand of Noxus",
       "id": 122,
       "key": "Darius",
       "name": "Darius",
-      "active": true
-    },
-    {
-      "title": "the Barbarian King",
-      "id": 23,
-      "key": "Tryndamere",
-      "name": "Tryndamere",
       "active": true
     },
     {
@@ -61,34 +40,20 @@
       "id": 83,
       "key": "Yorick",
       "name": "Yorick",
-      "active": true
+      "active": false
     },
     {
       "title": "the Magus Ascendant",
       "id": 101,
       "key": "Xerath",
       "name": "Xerath",
-      "active": true
+      "active": false
     },
     {
       "title": "the Battle Mistress",
       "id": 15,
       "key": "Sivir",
       "name": "Sivir",
-      "active": true
-    },
-    {
-      "title": "the Exile",
-      "id": 92,
-      "key": "Riven",
-      "name": "Riven",
-      "active": true
-    },
-    {
-      "title": "the Lady of Clockwork",
-      "id": 61,
-      "key": "Orianna",
-      "name": "Orianna",
       "active": true
     },
     {
@@ -103,14 +68,14 @@
       "id": 54,
       "key": "Malphite",
       "name": "Malphite",
-      "active": true
+      "active": false
     },
     {
       "title": "Keeper of the Hammer",
       "id": 78,
       "key": "Poppy",
       "name": "Poppy",
-      "active": true
+      "active": false
     },
     {
       "title": "the Deathsinger",
@@ -131,14 +96,14 @@
       "id": 20,
       "key": "Nunu",
       "name": "Nunu",
-      "active": true
+      "active": false
     },
     {
       "title": "the Troll King",
       "id": 48,
       "key": "Trundle",
       "name": "Trundle",
-      "active": true
+      "active": false
     },
     {
       "title": "the Outlaw",
@@ -159,14 +124,14 @@
       "id": 150,
       "key": "Gnar",
       "name": "Gnar",
-      "active": true
+      "active": false
     },
     {
       "title": "the Lady of Luminosity",
       "id": 99,
       "key": "Lux",
       "name": "Lux",
-      "active": true
+      "active": false
     },
     {
       "title": "the Half-Dragon",
@@ -439,7 +404,7 @@
       "id": 4,
       "key": "TwistedFate",
       "name": "Twisted Fate",
-      "active": false
+      "active": true
     },
     {
       "title": "the Terror of the Void",
@@ -873,14 +838,29 @@
       "id": 7,
       "key": "Leblanc",
       "name": "LeBlanc",
-      "active": false
+      "active": true
     },
     {
       "title": "the Prodigal Explorer",
       "id": 81,
       "key": "Ezreal",
       "name": "Ezreal",
-      "active": true
+      "active": false
+    },
+    {
+      "name": "test",
+      "active": true,
+      "id": 517
+    },
+    {
+      "name": "test",
+      "active": false,
+      "id": 518
+    },
+    {
+      "name": "Maxime le boss",
+      "active": true,
+      "id": 519
     }
   ]
 }
