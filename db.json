@@ -841,9 +841,11 @@
       "active": false
     },
     {
-      "name": "Gragas 2",
+      "name": "test",
       "active": true,
-      "id": 517
+      "key": "test",
+      "title": "Ce champion n'a pas encore de titre",
+      "id": 518
     }
   ]
 }

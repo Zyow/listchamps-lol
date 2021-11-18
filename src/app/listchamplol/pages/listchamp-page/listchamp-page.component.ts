@@ -31,7 +31,7 @@ export class ListchampPageComponent implements OnInit {
 
   //Ajouter un nouveau champion
   newChampPrt = (champname:string): void => {
-    let obj = { name: champname, active: true};
+    let obj = { name: champname, active: true, key: champname, title:"Ce champion n'a pas encore de titre"};
 
     this.listchampService.addChamp(obj).subscribe(data => {
       this.listchampService.getListChamp();
