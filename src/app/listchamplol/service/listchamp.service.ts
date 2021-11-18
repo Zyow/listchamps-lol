@@ -14,7 +14,7 @@ export class ListchampService {
   constructor(private http:HttpClient ) { }
 
   getListChamp = (): void =>{
-    this.http.get<Listchamp[]>(environment.URL).subscribe(
+    this.http.get<Listchamp[]>(`${environment.URL}/?_sort=id&_order=desc`).subscribe(
       data => {
         this.listchampstream.next(data);
       }

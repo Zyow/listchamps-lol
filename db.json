@@ -19,7 +19,7 @@
       "id": 201,
       "key": "Braum",
       "name": "Braum",
-      "active": false
+      "active": true
     },
     {
       "title": "the Hand of Noxus",
@@ -842,10 +842,24 @@
     },
     {
       "name": "test",
-      "active": true,
+      "active": false,
       "key": "test",
       "title": "Ce champion n'a pas encore de titre",
       "id": 518
+    },
+    {
+      "name": "Zed",
+      "active": true,
+      "key": "Zed",
+      "title": "Ce champion n'a pas encore de titre",
+      "id": 519
+    },
+    {
+      "name": "Jinks",
+      "active": true,
+      "key": "Jinks",
+      "title": "Ce champion n'a pas encore de titre",
+      "id": 520
     }
   ]
 }
