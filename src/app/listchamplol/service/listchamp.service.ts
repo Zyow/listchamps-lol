@@ -20,4 +20,8 @@ export class ListchampService {
       }
     )
   }
+
+  addChamp = (data: Listchamp): Observable<Listchamp> => {
+    return this.http.post<Listchamp>(environment.URL, data)
+  }
 }

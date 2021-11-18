@@ -1,6 +1,13 @@
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let listchamp of data; let i = index">
+    <ng-template [ngIf]="listchamp.active" [ngIfElse]="inactiveChamp">
       <span> name : {{ listchamp.name}}</span>
       <span> active : {{ listchamp.active}}</span>
+    </ng-template>
+
+    <ng-template #inactiveChamp>
+      <span class="text-muted"> name : {{ listchamp.name}}</span>
+      <span class="text-muted"> active : {{ listchamp.active}}</span>
+    </ng-template>
   </li>
 </ul>

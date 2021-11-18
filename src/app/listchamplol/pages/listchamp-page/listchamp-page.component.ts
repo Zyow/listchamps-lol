@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 import { Listchamp } from '../../model/listchamp';
 import { ListchampService } from '../../service/listchamp.service';
 
@@ -23,6 +24,17 @@ export class ListchampPageComponent implements OnInit {
   getListchamps = (): void => {
     this.listchampService.listchampstream.subscribe( data => {
       this.listchamps = data
+    },
+      err => console.error(err)
+    )
+  }
+
+  //Ajouter un nouveau champion
+  newChampPrt = (champname:string): void => {
+    let obj = { name: champname, active: true};
+
+    this.listchampService.addChamp(obj).subscribe(data => {
+      this.listchampService.getListChamp();
     },
       err => console.error(err)
     )

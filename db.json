@@ -965,6 +965,11 @@
       "key": "Ezreal",
       "name": "Ezreal",
       "active": true
+    },
+    {
+      "name": "yrdy",
+      "active": true,
+      "id": 517
     }
   ]
 }

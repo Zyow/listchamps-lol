@@ -1,5 +1,7 @@
 <div class="container">
 
+  <app-add-champ (newChamp)="newChampPrt($event)"></app-add-champ>
+
   <app-display-listchamp [data]="listchamps"></app-display-listchamp>
 
 </div>
