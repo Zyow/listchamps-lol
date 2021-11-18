@@ -33,7 +33,7 @@
       "id": 21,
       "key": "MissFortune",
       "name": "Miss Fortune",
-      "active": true
+      "active": false
     },
     {
       "title": "Shepherd of Souls",
@@ -54,21 +54,21 @@
       "id": 15,
       "key": "Sivir",
       "name": "Sivir",
-      "active": true
+      "active": false
     },
     {
       "title": "the Saltwater Scourge",
       "id": 41,
       "key": "Gangplank",
       "name": "Gangplank",
-      "active": true
+      "active": false
     },
     {
       "title": "Shard of the Monolith",
       "id": 54,
       "key": "Malphite",
       "name": "Malphite",
-      "active": false
+      "active": true
     },
     {
       "title": "Keeper of the Hammer",
@@ -236,14 +236,14 @@
       "id": 516,
       "key": "Ornn",
       "name": "Ornn",
-      "active": true
+      "active": false
     },
     {
       "title": "the Chain Warden",
       "id": 412,
       "key": "Thresh",
       "name": "Thresh",
-      "active": true
+      "active": false
     },
     {
       "title": "The Judicator",
@@ -568,13 +568,6 @@
       "active": false
     },
     {
-      "title": "The Might of Demacia",
-      "id": 86,
-      "key": "Garen",
-      "name": "Garen",
-      "active": false
-    },
-    {
       "title": "the Great Steam Golem",
       "id": 53,
       "key": "Blitzcrank",
@@ -848,19 +841,9 @@
       "active": false
     },
     {
-      "name": "test",
+      "name": "Gragas 2",
       "active": true,
       "id": 517
-    },
-    {
-      "name": "test",
-      "active": false,
-      "id": 518
-    },
-    {
-      "name": "Maxime le boss",
-      "active": true,
-      "id": 519
     }
   ]
 }
